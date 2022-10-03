@@ -9,7 +9,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 
 
-
 const MainMenu = () =>{
   return (
     <div>
