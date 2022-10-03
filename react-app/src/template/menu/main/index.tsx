@@ -35,16 +35,6 @@ const MainMenu = () =>{
             </ListItemButton>
           </ListItem>
         </Link>
-        <Link to={'/'} >
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <EngineeringIcon />
-              </ListItemIcon>
-              <ListItemText primary={"技術部"} sx={{textDecoration:'none',color:'white'}} />
-            </ListItemButton>
-          </ListItem>
-        </Link>
       </List>
       <Divider />
     </div>

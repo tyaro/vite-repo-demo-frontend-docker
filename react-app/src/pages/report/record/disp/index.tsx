@@ -55,14 +55,14 @@ const Dashboard = () => {
   }
   return(
     <>
-    <Grid container>
-      <Box>
       <Typography>
       {reportSetting.name}
       </Typography>
-      </Box>
+      <Grid container>
       <Box sx={{ flexGrow: 1, p: 1 ,width:800,marginTop:2}}>
       <SaveButton onClick={handleSave}/>
+      </Box>
+      <Box sx={{ flexGrow: 1, p: 1 ,width:800,marginTop:2}}>
        {rows.map((v:any,i:any)=>{
       return(
         <ReportItem 

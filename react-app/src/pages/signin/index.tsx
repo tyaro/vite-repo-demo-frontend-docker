@@ -10,6 +10,7 @@ import { useAuthContext } from "../../contexts";
 import { AuthContextType } from "../../types";
 import { Authentication,Signin } from "../../components/auth";
 import {Md5} from 'ts-md5';
+import Background from '../../template/background'
 
 const md5 = (value:string) =>{return Md5.hashAsciiStr(value)}
 
@@ -65,7 +66,7 @@ const Component = () => {
   return (
     <>
     <ThemeProvider theme={darkTheme}>
-    {/* <Background /> */}
+    <Background />
       <CssBaseline />
       <Box sx={{display:'flex',position:'absolute',top:'50%',left:'50%',transform:'translate(-50% ,-50%)'}}>
         <Card sx={{width:500,height:500,placeItems:'center',alignItems:'center',justifyContent:'center'}}>
