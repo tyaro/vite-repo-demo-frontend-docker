@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+  frontend:
+    build: ./containers/frontend
+    container_name: 'frontend'
+    environment: 
+      - HOST=0.0.0.0 
+      - CHOKIDAR_USEPOLLING=true 
+    volumes:
+      - .:/app
+    command: sh -c "cd react-app && yarn dev"
+    tty: true
+    ports:
+      - "3000:3000"
+      - "3100:3100"
+
+  nginx:
+    build: ./containers/nginx
+    container_name: nginx_frontend
+    ports:
+      - 8001:80
+    volumes:
+      - ./react-app/dist:/var/www
+      - ./containers/nginx:/etc/nginx/conf.d
+

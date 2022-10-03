@@ -1,0 +1,19 @@
+{ 
+  "system":{
+  "name":"Sample System"
+  },
+  "signin":{
+    "username":"User Name",
+    "password":"Password",
+    "signin":"Signin",
+    "error":"Sign in failed",
+    "success":"Signed in successfully"
+  },
+  "layout":{
+    "language":{
+      "select":"language select",
+      "japanese":"Ja",
+      "english":"En"
+    }
+  }
+}
